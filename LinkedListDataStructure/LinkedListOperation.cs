@@ -34,6 +34,10 @@ namespace LinkedListDataStructure
             node.next = head;
             head = node;
         }
+        public void Append(int data) //UC3 Append Data
+        {
+            Insert(data);
+        }
         public void Display()
         {
             if(head == null)

@@ -10,11 +10,12 @@ namespace LinkedListDataStructure
             LinkedListOperation  Operation = new LinkedListOperation();
             // Operation.Insert(56);  //UC1 Insert element into linkedlist
             //Operation.Insert(30);
-            Console.WriteLine("Adding elements into linked list:");
-            Operation.AddElement(70); //UC2 Add element into linked list
-            Operation.AddElement(30);
-            Operation.AddElement(56);
-            Operation.Display();
+            //Operation.AddElement(70); //UC2 Add element into linked list
+            //Operation.AddElement(30);
+            //Operation.AddElement(56);
+            Operation.Append(56); //UC3 Append element
+            Operation.Append(30);
+            Operation.Append(70);
         }
     }
 }
