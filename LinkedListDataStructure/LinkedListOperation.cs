@@ -28,5 +28,27 @@ namespace LinkedListDataStructure
                 Console.WriteLine("{0} is inserted into linked list",node.data);
             }
         }
+        public void AddElement(int data)
+        {
+            Node node = new Node(data);
+            node.next = head;
+            head = node;
+        }
+        public void Display()
+        {
+            if(head == null)
+            {
+                Console.WriteLine("LinkedList is Empty");
+            }
+            else
+            {
+                Node temp = head;
+                while(temp != null)
+                {
+                    Console.WriteLine(temp.data);
+                    temp = temp.next;
+                }
+            }
+        }
     }
 }
