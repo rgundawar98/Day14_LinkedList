@@ -143,6 +143,33 @@ namespace LinkedListDataStructure
             temp.next = node;
             Console.WriteLine("Node {0} is inserted after {1}",data,afterNum);
         }
+        public void Pop_Any_Element(int data)
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Linked list is empty");
+            }
+            else
+            {
+                Node temp = head;
+                if(temp.next != null)
+                {
+                    Console.WriteLine("Node is deleted"+data);
+                }
+                else
+                {
+                    if (temp.next.data == data)
+                    {
+                        Console.WriteLine("Node is deleted"+data);
+                    }
+                    else
+                    {
+                        temp = temp.next.next;
+                        Console.WriteLine("Node should be deleted");
+                    }
+                }
+            }
+        }
         public void Display()
         {
             if(head == null)
@@ -159,5 +186,6 @@ namespace LinkedListDataStructure
                 }
             }
         }
+
     }
 }

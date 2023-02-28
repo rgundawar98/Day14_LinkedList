@@ -45,11 +45,19 @@ namespace LinkedListDataStructure
             //Operation.Search_Element(30);
 
             //UC8 Insert_new_element
+            //Operation.AddElement(56);
+            //Operation.AddElement(70);
+            //Operation.InsertInto(30,2);
+            //Operation.Insert_New_Element(40,30);
+            //Operation.Display();
+
+            //UC9 PopAnyElement
             Operation.AddElement(56);
             Operation.AddElement(70);
-            Operation.InsertInto(30,2);
-            Operation.Insert_New_Element(40,30);
+            Operation.InsertInto(30, 2);
+            Operation.Insert_New_Element(40, 30);
             Operation.Display();
+            Operation.Pop_Any_Element(40);
         }
     }
 }
