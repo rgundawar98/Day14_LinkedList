@@ -31,11 +31,18 @@ namespace LinkedListDataStructure
             //Operation.Display();
 
             //UC6 Delete last node
+            //Operation.AddElement(56);
+            //Operation.AddElement(70);
+            //Operation.InsertInto(30, 2);
+            //Operation.Delete_Last_Node();
+            //Operation.Display();
+
+            //UC7 SearchElement in linkedlist
             Operation.AddElement(56);
             Operation.AddElement(70);
             Operation.InsertInto(30, 2);
-            Operation.Delete_Last_Node();
             Operation.Display();
+            Operation.Search_Element(30);
         }
     }
 }
