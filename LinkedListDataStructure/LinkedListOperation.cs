@@ -38,6 +38,42 @@ namespace LinkedListDataStructure
         {
             Insert(data);
         }
+       public void InsertInto( int data , int Position)
+        {
+            Node node = new Node(data);
+            node.data = data;
+            node.next = null;
+            if(Position < 1)
+            {
+                Console.WriteLine("Position should be greater than");
+            }
+            else if(Position == 1)
+            {
+                node.next = head;
+                head= node;
+            }
+            else
+            {
+                Node temp = new Node(data);
+                temp = head;
+                for(int i=1;i<Position-1;i++)
+                {
+                    if (temp != null)
+                    {
+                        temp= temp.next;
+                    }
+                }
+                if(temp!= null)
+                {
+                    node.next = temp.next;
+                    temp.next = node;
+                }
+                else
+                {
+                    Console.WriteLine("The previous node is null");
+                }
+            }
+        }
         public void Display()
         {
             if(head == null)

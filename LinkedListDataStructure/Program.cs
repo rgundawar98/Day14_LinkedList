@@ -13,9 +13,15 @@ namespace LinkedListDataStructure
             //Operation.AddElement(70); //UC2 Add element into linked list
             //Operation.AddElement(30);
             //Operation.AddElement(56);
-            Operation.Append(56); //UC3 Append element
-            Operation.Append(30);
-            Operation.Append(70);
+            //Operation.Append(56); //UC3 Append element
+            //Operation.Append(30);
+            //Operation.Append(70);
+
+            //UC4 InsertInto method
+            Operation.AddElement(56);
+            Operation.AddElement(70);
+            Operation.InsertInto(30,2);
+            Operation.Display();
         }
     }
 }
