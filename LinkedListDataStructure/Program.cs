@@ -38,11 +38,18 @@ namespace LinkedListDataStructure
             //Operation.Display();
 
             //UC7 SearchElement in linkedlist
+            //Operation.AddElement(56);
+            //Operation.AddElement(70);
+            //Operation.InsertInto(30, 2);
+            //Operation.Display();
+            //Operation.Search_Element(30);
+
+            //UC8 Insert_new_element
             Operation.AddElement(56);
             Operation.AddElement(70);
-            Operation.InsertInto(30, 2);
+            Operation.InsertInto(30,2);
+            Operation.Insert_New_Element(40,30);
             Operation.Display();
-            Operation.Search_Element(30);
         }
     }
 }
