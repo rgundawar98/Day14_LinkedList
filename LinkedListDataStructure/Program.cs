@@ -22,12 +22,19 @@ namespace LinkedListDataStructure
             //Operation.AddElement(70);
             //Operation.InsertInto(30,2);
             //Operation.Display();
-            
+
             //UC5 Delete method
+            //Operation.AddElement(56);
+            //Operation.AddElement(70);
+            //Operation.InsertInto(30,2);
+            //Operation.Delete();
+            //Operation.Display();
+
+            //UC6 Delete last node
             Operation.AddElement(56);
             Operation.AddElement(70);
-            Operation.InsertInto(30,2);
-            Operation.Delete();
+            Operation.InsertInto(30, 2);
+            Operation.Delete_Last_Node();
             Operation.Display();
         }
     }

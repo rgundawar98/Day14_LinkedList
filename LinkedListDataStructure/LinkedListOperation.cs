@@ -86,6 +86,27 @@ namespace LinkedListDataStructure
                 Console.WriteLine("Removed first node");
             }
         }
+        public void Delete_Last_Node()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Linked list is empty");
+            }
+            else
+            {
+                if (head.next == null)
+                    head = null;
+                else
+                {
+                    Node temp = head;
+                    while(temp.next.next != null)
+                    {
+                        temp = temp.next;
+                    }
+                    temp.next = null;
+                }
+            }
+        }
         public void Display()
         {
             if(head == null)
